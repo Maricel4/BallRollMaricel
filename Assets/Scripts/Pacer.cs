@@ -6,6 +6,7 @@ public class Pacer : MonoBehaviour
 
 {
   public float speed = 5.0f;
+  public float start;
   private float zMax = 7.5f;
   private float zMin = -7.5f;
   private int direction = 1;
@@ -21,7 +22,7 @@ public class Pacer : MonoBehaviour
         zNew = zMin;
         direction *= -1;
       }
-      transform.position = new Vector3(7.5f, .75f, zNew);
+      transform.position = new Vector3(start, .75f, zNew);
     }
 
 

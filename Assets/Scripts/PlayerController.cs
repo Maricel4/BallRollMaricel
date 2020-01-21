@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 //creates a variable to hold the reference
   public Text countText;
   public Text winText;
+  public int goal;
   private Rigidbody rb;
   private int count;
   void Start()
@@ -40,7 +41,7 @@ public class PlayerController : MonoBehaviour {
   void SetCountText ()
   {
     countText.text = "Count: " + count.ToString ();
-      if(count >= 13)
+      if(count >= goal)
       {
         winText.text = "You Win!";
       }
