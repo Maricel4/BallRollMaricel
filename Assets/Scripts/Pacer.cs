@@ -18,7 +18,7 @@ public class Pacer : MonoBehaviour
       if (zNew >= zMax) {
          zNew = zMax;
          direction *= -1;
-      }else if (zNew <= zMin) {
+      } else if (zNew <= zMin) {
         zNew = zMin;
         direction *= -1;
       }
